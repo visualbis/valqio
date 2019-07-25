@@ -1,12 +1,12 @@
 # valqio
 Sample Server Implementation for ValQ APIs
 
-Install the dependencies
+1. Install the dependencies
 
 `pip install -r requirements.txt`
 
-Update the mongodb credentials in .env
+2. Update the mongodb credentials in .env
 
-Start the server
+3. Start the server
 
 `python run.py`
