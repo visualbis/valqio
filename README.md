@@ -110,7 +110,7 @@ Sample Server Implementation for ValQ APIs
 
 # POST Scenario 
 **URL**
-`http://127.0.0.1:5000/scenarios/{id}`
+`http://127.0.0.1:5000/scenarios/`
 
 **payload**
 ```
