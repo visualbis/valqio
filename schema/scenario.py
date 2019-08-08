@@ -127,7 +127,6 @@ scenario = {
     },
     'activeInitiative': {
         'type': 'string',
-        'required': True
     },
     'collapsed': {
         'type': 'boolean'
