@@ -1,3 +1,21 @@
+comment = {
+    'author': {
+        'type': 'string',
+        'required': True,
+    },
+    'comment': {
+        'type': 'string',
+        'required': True,
+    },
+    'time': {
+        'type': 'string',
+        'required': True,
+    },
+    'id': {
+        'type': 'string',
+        'required': True,
+    }
+}
 initiative = {
     'id': {
         'type': 'number',
@@ -36,7 +54,7 @@ initiative = {
         }
     },
     'simActions': {
-        'type': 'list'
+        'type': 'dict'
     },
     'author': {
         'type': 'string',
@@ -49,7 +67,15 @@ initiative = {
     'relatedScenario': {
         'type': 'string',
         'required': True
+    },
+    'enabled': {
+        'type': 'boolean',
+        'required': True
+    },
+    'comments': {
+        'type': 'dict'
     }
+
 }
 
 scenario = {
@@ -86,7 +112,7 @@ scenario = {
         }
     },
     'simActions': {
-        'type': 'list'
+        'type': 'dict'
     },
     'author': {
         'type': 'string',
@@ -108,6 +134,7 @@ scenario = {
     }
 }
 
+
 schema = {
     # Schema definition, based on Cerberus grammar. Check the Cerberus project
     # (https://github.com/pyeve/cerberus) for details.
@@ -127,6 +154,10 @@ schema = {
         'type': 'string',
         'required': True,
     },
+    'description': {
+        'type': 'string',
+        'required': True,
+    },
     'scenarios': {
         'type': 'list',
         'schema': {
@@ -137,8 +168,12 @@ schema = {
     'activeScenario': {
         'type': 'string',
         'required': True,
+    },
+    'comments': {
+        'type': 'dict'
     }
 }
+
 
 scenarios = {
     # 'title' tag used in item links. Defaults to the resource title minus
