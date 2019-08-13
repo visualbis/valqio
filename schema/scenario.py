@@ -130,6 +130,9 @@ scenario = {
     },
     'collapsed': {
         'type': 'boolean'
+    },
+    'comments': {
+        'type': 'dict'
     }
 }
 
@@ -167,9 +170,6 @@ schema = {
     'activeScenario': {
         'type': 'string',
         'required': True,
-    },
-    'comments': {
-        'type': 'dict'
     }
 }
 
