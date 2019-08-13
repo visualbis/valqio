@@ -1,7 +1,10 @@
 from eve import Eve
 from dotenv import load_dotenv
 from flask_cors import CORS
-load_dotenv()
+import os
+
+if os.environ.get("ENV", None) == None:
+    load_dotenv()
 
 app = Eve()
 CORS(app)
