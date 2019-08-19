@@ -133,6 +133,9 @@ scenario = {
     },
     'comments': {
         'type': 'dict'
+    },
+    'conflicts': {
+        'type': 'list'
     }
 }
 
