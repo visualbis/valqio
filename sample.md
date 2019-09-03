@@ -7,7 +7,7 @@
 
 **Global Functions**    
 
-> **initVariables()**:<br/>
+> **initVariables()**<br/>
 Assigns default values to the global variable<br/>
 ***Event:*** Application - `On Startup` <br/>
 
