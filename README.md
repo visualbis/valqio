@@ -11,6 +11,8 @@ Sample Server Implementation for ValQ APIs
 
 `python run.py`
 
+[Sample implementaion in Lumira](https://github.com/visualbis/valqio/blob/master/sample.md)
+
 
 # GET Collection List 
 **URL**
