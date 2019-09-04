@@ -173,6 +173,9 @@ schema = {
     'activeScenario': {
         'type': 'string',
         'required': True,
+    },
+    'treeState': {
+        'type': 'dict'
     }
 }
 
