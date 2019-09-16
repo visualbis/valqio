@@ -105,7 +105,7 @@ scenario = {
             'type': 'dict',
             'schema': {
                 'name': {'type': 'string'},
-                'value': {'type': 'string'},
+                'value': {'oneof': [{'type': 'string'}, {'type': 'number'}]},
                 'sMeth': {'type': 'string'},
                 'manSim': {'type': 'list'}
             }
