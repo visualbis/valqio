@@ -47,7 +47,7 @@ initiative = {
             'type': 'dict',
             'schema': {
                 'name': {'type': 'string'},
-                'value': {'type': 'string'},
+                'value': {'nullable': True, 'oneof': [{'type': 'string'}, {'type': 'number'}]},
                 'sMeth': {'type': 'string'},
                 'manSim': {'type': 'list'}
             }
@@ -105,7 +105,7 @@ scenario = {
             'type': 'dict',
             'schema': {
                 'name': {'type': 'string'},
-                'value': {'oneof': [{'type': 'string'}, {'type': 'number'}]},
+                'value': {'nullable': True, 'oneof': [{'type': 'string'}, {'type': 'number'}]},
                 'sMeth': {'type': 'string'},
                 'manSim': {'type': 'list'}
             }
